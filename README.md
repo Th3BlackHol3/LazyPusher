@@ -13,11 +13,13 @@ The script provides clear success or error messages, ensuring users are informed
 
 1. Ensure that you have Python installed on your system.
 
-2. Clone or download the LazyPusher script from the GitHub repository.
+2. Clone or download the LazyPusher script from the GitHub repository, This script will only work on The Repo You Want to Push on Git, Which is Previously Connected With Git Repo.
+
+      #### $ git clone https://github.com/Th3BlackHol3/LazyPusher.git
 
 3. Open a terminal or command prompt and navigate to the directory where the script is located.
 
-4. Execute the script using the following command:
+4. Execute the script using the following command (Make Sure You are Running This Script on Your Local Repo You Want to Push):
 
       #### $ sudo chmod +x LazyPusher.py
 
