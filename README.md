@@ -19,17 +19,17 @@ The script provides clear success or error messages, ensuring users are informed
 
 4. Execute the script using the following command:
 
-##    $ sudo chmod +x LazyPusher.py
+      #### $ sudo chmod +x LazyPusher.py
 
-##    $ python LazyPusher.py
+      #### $ python LazyPusher.py
 
 5. The script will prompt you with the following messages:
 
-  a. Enter the commit message: Provide the commit message for the initial commit.
+      a. Enter the commit message: Provide the commit message for the initial commit.
 
-  b. Enter the branch name: Specify the name of the branch to be created or modified (e.g., "main", "development", etc.).
+      b. Enter the branch name: Specify the name of the branch to be created or modified (e.g., "main", "development", etc.).
 
-  c. (Optional) Enter the remote repository URL: If the remote URL is not already set in the local repository, you will be prompted to provide it as input.
+      c. (Optional) Enter the remote repository URL: If the remote URL is not already set in the local repository, you will be prompted to provide it as input.
 
 6. LazyPusher will then automate the Git commands required to initialize the repository, make the first commit, and push the changes to the remote repository.
 
