@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import subprocess
 
 print('''
@@ -22,9 +24,9 @@ Disclaimer: Imagine You Didn't Push Your Code and Found Next Day Your Device Cra
 def run_git_command(command):
     try:
         result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
-        return result.stdout.strip()
+        return True, result.stdout.strip()
     except subprocess.CalledProcessError as e:
-        return e.stderr
+        return False, e.stderr
 
 # Pull latest changes from the remote repository
 run_git_command('git pull')
@@ -39,7 +41,10 @@ run_git_command('git add .')
 commit_message = input("Enter the commit message: ")
 
 # Commit changes with the provided message
-run_git_command(f'git commit -m "{commit_message}"')
+success, output = run_git_command(f'git commit -m "{commit_message}"')
+if not success:
+    print("Commit failed:", output)
+    exit(1)
 
 # Ask for the branch name to be created or modified (e.g., "main", "development", etc.)
 branch_name = input("Enter the branch name: ")
@@ -57,5 +62,9 @@ if not current_remote_url:
     run_git_command(f'git remote add origin {remote_url}')
 
 # Push changes to the remote repository
-run_git_command(f'git push -u origin {branch_name}')
+success, output = run_git_command(f'git push -u origin {branch_name}')
+if success:
+    print("Success: Code pushed to the remote repository.")
+else:
+    print("Error:", output)
 
