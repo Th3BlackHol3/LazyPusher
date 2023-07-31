@@ -16,16 +16,17 @@ The script provides clear success or error messages, ensuring users are informed
 2. Clone or download the LazyPusher script from the GitHub repository, This script will only work on The Repo You Want to Push on Git, Which is Previously Connected With Git Repo.
 
       #### $ git clone https://github.com/Th3BlackHol3/LazyPusher.git
+      #### Copy / Move LazyPusher.py to Your Local Repository, That will work from your local repo. If you have multiple repos then copy LazyPusher.py to all repos.
 
-3. Open a terminal or command prompt and navigate to the directory where the script is located.
+4. Open a terminal or command prompt and navigate to LazyPusher.py (where the script is located).
 
-4. Execute the script using the following command (Make Sure You are Running This Script on Your Local Repo You Want to Push):
+5. Execute the script using the following command (Make Sure You are Running This Script on Your Local Repo You Want to Push):
 
       #### $ sudo chmod +x LazyPusher.py
 
       #### $ python LazyPusher.py
 
-5. The script will prompt you with the following messages:
+6. The script will prompt you with the following messages:
 
       a. Enter the commit message: Provide the commit message for the initial commit.
 
@@ -33,9 +34,9 @@ The script provides clear success or error messages, ensuring users are informed
 
       c. (Optional) Enter the remote repository URL: If the remote URL is not already set in the local repository, you will be prompted to provide it as input.
 
-6. LazyPusher will then automate the Git commands required to initialize the repository, make the first commit, and push the changes to the remote repository.
+7. LazyPusher will then automate the Git commands required to initialize the repository, make the first commit, and push the changes to the remote repository.
 
-7. After execution, LazyPusher will display either a success message confirming the successful push to the remote repository or an error message indicating any encountered issues.
+8. After execution, LazyPusher will display either a success message confirming the successful push to the remote repository or an error message indicating any encountered issues.
 
 # Note:
 
