@@ -49,3 +49,9 @@ The script provides clear success or error messages, ensuring users are informed
 After following the usage instructions and running the script, LazyPusher will enable you to save time and effort when managing your Git repositories and facilitate smoother collaboration with your team.
 
 # Respect Hackers | HAPPY HACKING! | PEACE!!
+
+## Buy Me a coffee?
+
+<a href="https://www.buymeacoffee.com/Th3BlackHol3"><img src="https://i.ibb.co/4WczSJX/Th3-Black-Hol3.png" height="300" widght="300">
+
+[Buy me a coffe](https://www.buymeacoffee.com/Th3BlackHol3)
